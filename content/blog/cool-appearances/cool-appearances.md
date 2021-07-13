@@ -3,8 +3,6 @@ title: Cool appearances I've made!
 date: "2021-07-13"
 ---
 
-Cool people I've spoken to!
-
 # Hack Club AMAs
 
 Alex Stamos (I hosted!)
