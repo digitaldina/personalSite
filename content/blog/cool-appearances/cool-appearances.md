@@ -2,7 +2,7 @@
 title: Cool appearances I've made!
 date: "2021-07-13"
 ---
-A collection of appearances I've made that are available for your viewing pleasure on areas through the interwebs
+A collection of appearances I've made that are available for your viewing pleasure on areas through the interwebs.
 <br>
 # Hack Club AMAs
 
