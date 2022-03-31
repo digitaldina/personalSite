@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 class PXDemo extends React.Component {
   
    render() {   
-    window.location.href = "http://www.w3schools.com"
+    window.location.href = "https://driveforward.live/PXDemo"
 
     return (<div></div>)
   }
