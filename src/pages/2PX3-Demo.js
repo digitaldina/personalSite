@@ -45,7 +45,10 @@ class BlogIndex extends React.Component {
                  
                <p>running our algorithm in training mode</p>
                <img src="https://cdn.glitch.global/e5b8e94f-8fa0-44a0-a5eb-631d02499035/demo_training_mode.png?v=1648731888403"/>
-            </div>
+            
+               <p>Parameters for length, width, speed, number of containers, sensing zone location, sampling frequency were chosen based on maximal values from testing the algorithm. OPTIMAL VALUES FOR PARAMTERS ARE HIGHLIGHTED:</p>
+               <img src="https://cdn.glitch.global/e5b8e94f-8fa0-44a0-a5eb-631d02499035/testing_parameters.png?v=1648732142291"/>  
+                 </div>
           )
       </Layout>
     )
