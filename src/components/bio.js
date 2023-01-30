@@ -29,11 +29,11 @@ function Bio() {
               <img src={require('../../static/me.jpeg')} style={{borderRadius:`50%`}} alt={author}/>
             </div>
             <p>
-              Written by <strong>{author}</strong> who leads the Milton Hack Club (which she founded) and loves working on and hearing about cool projects. She rarely checks social media, so
+             Written by <strong>{author}</strong>. Along with software development, digitaldina is in their 3rd year of Engineering Physics at McMaster University  and enjoys things like good food as well as producing, performing, and sound mixing music.
               {` `}
               <a href={`mailto:dinaelhanan@gmail.com`}>
-                here's her email.
-              </a>
+                Here's their email!
+              </a> :)
             </p>
           </div>
         )
