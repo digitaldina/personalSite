@@ -6,13 +6,13 @@ A collection of appearances I've made that are available for your viewing pleasu
 <br>
 # Hack Club AMAs
 
-Alex Stamos (I hosted!)
+alex stamos (I hosted!)
 https://www.youtube.com/watch?v=6Tn4pNr9TsU
 
-Nicky Case
+nicky case
 https://www.youtube.com/watch?v=o9m-ywfLoBk
 
-Audrey Tang
+audrey tang
 https://www.youtube.com/watch?v=NGRHzUZxA2U
 
 patrick collison

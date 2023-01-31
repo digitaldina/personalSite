@@ -32,6 +32,7 @@
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
     "react-helmet": "^5.2.0",
+    "react-scripts": "^5.0.1",
     "react-typography": "^0.16.18",
     "styled-components": "^4.4.1",
     "typeface-merriweather": "0.0.54",
@@ -52,7 +53,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider npm run develop",
     "serve": "gatsby serve",
     "clean": "rm -rf .cache",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
