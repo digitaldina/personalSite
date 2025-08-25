@@ -7,21 +7,13 @@ import Image from 'next/image';
 // Interactive Terminal Component
 const InteractiveTerminal: React.FC = () => {
   const [history, setHistory] = useState<string[]>([
-    'echo "Welcome!"',
-    'Welcome!',
+    'echo "Welcome to Retro Terminal!"',
+    'Welcome to Retro Terminal!',
     'ls',
     'Desktop  Documents  Downloads  Music  Pictures',
   ]);
   const [input, setInput] = useState('');
   const inputRef = useRef<HTMLInputElement>(null);
-  const outputRef = useRef<HTMLDivElement>(null);
-
-  // Auto-scroll to bottom when history changes
-  useEffect(() => {
-    if (outputRef.current) {
-      outputRef.current.scrollTop = outputRef.current.scrollHeight;
-    }
-  }, [history]);
 
   const handleTerminalClick = () => {
     inputRef.current?.focus();
@@ -31,7 +23,7 @@ const InteractiveTerminal: React.FC = () => {
     let output = '';
     switch (cmd.trim().toLowerCase()) {
       case 'about':
-        output = 'Hi, alsdjflasjdfajsdv \nCreated by digitaldina.';
+        output = 'This is a retro-style terminal window.\nCreated by digitaldina.';
         break;
       case 'help':
         output = 'Available commands: about, help, clear, ls, echo';
@@ -89,28 +81,16 @@ const InteractiveTerminal: React.FC = () => {
       tabIndex={0}
       onClick={handleTerminalClick}
     >
-      <div style={{ fontWeight: 'bold', marginBottom: '0.5vw', letterSpacing: '0.15vw' }}>
-        <span style={{ color: '#e7d7b1', fontSize: 'clamp(12px, 1vw, 16px)' }}>┌─[retro@os]</span> 
-        <span style={{ color: '#fff', fontSize: 'clamp(12px, 1vw, 16px)' }}>─[~]</span>
+      <div style={{ fontWeight: 'bold', marginBottom: 8, letterSpacing: 2 }}>
+        <span style={{ color: '#e7d7b1' }}>┌─[retro@os]</span> <span style={{ color: '#fff' }}>─[~]</span>
       </div>
-      <div 
-        ref={outputRef}
-        className="hide-scrollbar"
-        style={{ 
-          flex: 1, 
-          width: '100%', 
-          overflowY: 'auto', 
-          fontSize: 'clamp(12px, 1vw, 16px)', 
-          whiteSpace: 'pre-line', 
-          marginBottom: '0.25vw'
-        }}
-      >
+      <div style={{ flex: 1, width: '100%', overflowY: 'auto', fontSize: 16, whiteSpace: 'pre-line', marginBottom: 4 }}>
         {history.map((line, idx) => (
           <div key={idx}>{line}</div>
         ))}
       </div>
       <div style={{ display: 'flex', alignItems: 'center', width: '100%' }}>
-        <span style={{ color: '#e7d7b1', marginRight: '0.25vw', fontSize: 'clamp(12px, 1vw, 16px)' }}>$</span>
+        <span style={{ color: '#e7d7b1', marginRight: 4 }}>$</span>
         <input
           ref={inputRef}
           value={input}
@@ -122,7 +102,7 @@ const InteractiveTerminal: React.FC = () => {
             outline: 'none',
             color: '#e7d7b1',
             fontFamily: 'monospace',
-            fontSize: 'clamp(12px, 1vw, 16px)',
+            fontSize: 16,
             flex: 1,
           }}
         />
@@ -199,12 +179,14 @@ export default function DraggableContainer({
           className="absolute retro-terminal-window"
           style={{
             zIndex: 999,
-            left: '37%',
-            top: '15%',
-            width: '23vw',
+            left: '33%',
+            top: '18%',
+            width: '32vw',
             minWidth: 220,
-            height: '16vw',
-            minHeight: 220,
+            maxWidth: 420,
+            height: '20vw',
+            minHeight: 120,
+            maxHeight: 260,
             pointerEvents: 'auto',
           }}
         >
